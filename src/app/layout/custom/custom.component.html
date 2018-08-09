@@ -20,7 +20,7 @@
                 <i class="anticon anticon-cloud-o"></i> 记忆数据交易</li>
               <li nz-menu-divider></li>
               <li nz-menu-item>
-                <i class="anticon anticon-message"></i> 我想跟你说</li>
+                <i class="anticon anticon-message"></i> 我想对你说</li>
             </ul>
           </li>
         </ul>
@@ -33,7 +33,27 @@
     </div>
   </nz-header>
   <nz-content style="margin-top:64px;">
-    <router-outlet></router-outlet>
+    <div nz-row style="margin-bottom: 48px;">
+      <div nz-col nzSpan="24">
+        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+          <picture>
+            <source srcset srcset="../../../assets/image/homepage/content-picture-base-200.jpg" media="(min-width: 1800px)">
+            <source srcset srcset="../../../assets/image/homepage/content-picture-base-400.jpg" media="(min-width: 1600px)">
+            <source srcset srcset="../../../assets/image/homepage/content-picture-base-600.jpg" media="(min-width: 1400px)">
+            <source srcset srcset="../../../assets/image/homepage/content-picture-base-800.jpg" media="(min-width: 1200px)">
+            <source srcset srcset="../../../assets/image/homepage/content-picture-base-1000.jpg" media="(min-width: 1000px)">
+            <source srcset srcset="../../../assets/image/homepage/content-picture-base-1200.jpg" media="(min-width: 800px)">
+            <source srcset srcset="../../../assets/image/homepage/content-picture-base-1400.jpg" media="(min-width: 600px)">
+            <img srcset="../../../assets/image/homepage/content-picture-base.jpg" style="width: 100%; height: 100%;">
+          </picture>
+        </div>
+        <div style="position: relative;">
+          <div style="height: 403.75px;">
+            添加内容
+          </div>
+        </div>
+      </div>
+    </div>
   </nz-content>
   <nz-footer style="text-align: center;">Zhangtianlong Design ©2018 Implement By Angular</nz-footer>
 </nz-layout>
