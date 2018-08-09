@@ -35,6 +35,11 @@ import { LayoutPassportComponent } from './passport/passport.component';
 const PASSPORT = [
   LayoutPassportComponent
 ];
+// custom
+import { LayoutCustomComponent } from './custom/custom.component';
+const CUSTOM = [
+  LayoutCustomComponent
+];
 
 @NgModule({
   imports: [SharedModule],
@@ -42,11 +47,13 @@ const PASSPORT = [
   declarations: [
     ...COMPONENTS,
     ...HEADERCOMPONENTS,
-    ...PASSPORT
+    ...PASSPORT,
+    ...CUSTOM
   ],
   exports: [
     ...COMPONENTS,
-    ...PASSPORT
+    ...PASSPORT,
+    ...CUSTOM
   ]
 })
 export class LayoutModule { }

@@ -1,0 +1,39 @@
+<nz-layout class="layout">
+  <nz-header style="position: fixed; width: 100%; padding: 0px;">
+    <div nz-row>
+      <div nz-col nzSpan="2">
+        <div class="logo"></div>
+      </div>
+      <div nz-col nzSpan="20">
+        <ul nz-menu [nzTheme]="'dark'" [nzMode]="'horizontal'" style="line-height: 64px;">
+          <li nz-menu-item [nzSelected]="'true'">
+            <i class="anticon anticon-home"></i> 首页</li>
+          <li nz-menu-item>
+            <i class="anticon anticon-book"></i> 个人博客</li>
+          <li nz-menu-item>
+            <i class="anticon anticon-rocket"></i> 技术探索</li>
+          <li nz-submenu>
+            <span title>
+              <i class="anticon anticon-bulb"></i> 产品设计</span>
+            <ul>
+              <li nz-menu-item>
+                <i class="anticon anticon-cloud-o"></i> 记忆数据交易</li>
+              <li nz-menu-divider></li>
+              <li nz-menu-item>
+                <i class="anticon anticon-message"></i> 我想跟你说</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div nz-col nzSpan="2">
+        <button nz-button nzType="primary" [nzSize]="large" nzShape="circle">
+          <i class="anticon anticon-user"></i>
+        </button>
+      </div>
+    </div>
+  </nz-header>
+  <nz-content style="margin-top:64px;">
+    <router-outlet></router-outlet>
+  </nz-content>
+  <nz-footer style="text-align: center;">Zhangtianlong Design ©2018 Implement By Angular</nz-footer>
+</nz-layout>
